@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Running inside docker"
+docker exec -i -t $@ /bin/bash

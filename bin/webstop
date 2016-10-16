@@ -1,0 +1,19 @@
+#!/bin/sh
+echo "Running inside docker"
+BASEDIR=$(dirname "$0")
+server="$1"
+
+case $server in
+  idt)
+  echo "Starting Identired"
+  docker-compose -f $BASEDIR/../compose/idt-compose.yml stop
+  ;;
+  web)
+  echo "Starting Webserver"
+  docker-compose -f $BASEDIR/../compose/web-compose.yml stop
+  ;;
+  *)
+  echo "Unknown Webserver"
+  echo "Servers availables: web, idt"
+  ;;
+esac

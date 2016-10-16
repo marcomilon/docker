@@ -1,0 +1,9 @@
+FROM :image
+
+:grunt_cli
+
+# Define working directory.
+WORKDIR /data
+
+# Define default command.
+CMD ["bash"]

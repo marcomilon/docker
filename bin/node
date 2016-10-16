@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Running inside docker"
+docker run --rm -v $(pwd):/data idt/node:grunt-cli $@

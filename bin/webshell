@@ -1,0 +1,19 @@
+#!/bin/sh
+echo "Running inside docker"
+BASEDIR=$(dirname "$0")
+server="$1"
+
+case $server in
+  idt)
+  echo "Starting Identired bash"
+  docker exec -i -t idt /bin/bash
+  ;;
+  web)
+  echo "Starting Webserver bash"
+  docker exec -i -t web /bin/bash
+  ;;
+  *)
+  echo "Unknown Bash"
+  echo "Bash availables: web, idt"
+  ;;
+esac
