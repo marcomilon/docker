@@ -5,7 +5,7 @@ services:
     container_name: :apache_container_name
     restart: always
     volumes:
-      - :base_dir/sites:/var/www/html
+      - :apache_document_root:/var/www/html
     depends_on:
       - db
     links:

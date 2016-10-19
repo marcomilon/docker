@@ -17,7 +17,7 @@ sed "s/:image/$node_image/g" templates/NodeJsFile > tmp/Dockerfile_tmp
 
 if [ $grunt_cli -eq 1 ];
 then
-  install_grunt=$(<templates/node_packages/grunt-cli)
+  install_grunt="RUN npm install -g grunt-cli"
   sed "s/:grunt_cli/$install_grunt/g" tmp/Dockerfile_tmp > tmp/Dockerfile
 else
   sed "s/:grunt_cli//g" tmp/Dockerfile_tmp > tmp/Dockerfile
