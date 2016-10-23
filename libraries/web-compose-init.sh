@@ -58,7 +58,7 @@ echo
 echo "A new Docker compose file was created in $compose_dir/web-compose.yml"
 echo "You can start your new Lamp evairoment with: docker-compose -f $compose_dir/web-compose.yml up -d"
 echo
-read -p "Do you want to start Lamp now? [Y/n] " 1 -r
+read -p "Do you want to start Lamp now? [Y/n] " -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
