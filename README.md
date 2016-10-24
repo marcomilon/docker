@@ -18,11 +18,9 @@ Tested on Linux and Macos
 
 I want to provide an easy to use Lamp Stack. Not meant to be use on production.
 
-## What do i need to do first
+## How do i set up the Lamp Stack
 
 First you need to download the images. Launch the script *lamp-init.sh* in the libraries directory.
-
-For example
 
 `sh libraries/lamp-init.sh`
 
@@ -35,6 +33,8 @@ For example
 `sh libraries/web-compose-init.sh`
 
 You need to execute this command every time you change your config file.
+
+**You need to do this step only the first time**
 
 ## How to change the version of Mysql and Php
 
