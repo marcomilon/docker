@@ -28,8 +28,6 @@ This command will download the images. You need to execute this command every ti
 
 After you want to compose the Docker lamp Stack. You do it with the scrip *web-compose-init.sh* in the libraries directory.
 
-For example
-
 `sh libraries/web-compose-init.sh`
 
 You need to execute this command every time you change your config file.
