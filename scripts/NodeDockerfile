@@ -1,6 +1,6 @@
-FROM :image
+FROM node:4.6.1
 
-:grunt_cli
+RUN npm install -g grunt-cli
 
 # Define working directory.
 WORKDIR /data

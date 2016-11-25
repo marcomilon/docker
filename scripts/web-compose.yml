@@ -1,0 +1,30 @@
+version: '2'
+services:
+  web:
+    image: idt/web:5.6-mcrypt-gd-mysql
+    container_name: idt-web
+    restart: always
+    volumes:
+      - /replace/with/your/document_root/:/var/www/html
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - 80:80
+  db:
+    image: mysql:5.7
+    container_name: idt-mysql
+    restart: always
+    volumes:
+      - /replace/with/your/datadir:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: your-mysql-pwd
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.6.4-1
+    container_name: idt-phpmyadmin
+    restart: always
+    links:
+      - db
+    ports:
+      - 8080:80

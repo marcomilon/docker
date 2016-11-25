@@ -1,3 +1,2 @@
 #!/bin/sh
-echo "Running inside docker"
 docker run --rm -v $(pwd):/app -v $HOME/.composer:/composer composer/composer:1.2-alpine $@
