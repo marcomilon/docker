@@ -27,6 +27,7 @@ For example
 `sh script/lamp-init.sh`
 
 For NodeJS
+
 `sh script/lamp-init.sh`
 
 This command will download the images.
