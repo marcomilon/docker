@@ -24,10 +24,10 @@ First you need to download the images. Launch the script *lamp-init.sh* in the l
 
 For example
 
-`sh script/lamp-init.sh`
+`sh script/init-lamp.sh`
 
 For NodeJS
 
-`sh script/lamp-init.sh`
+`sh script/init-node.sh`
 
 This command will download the images.

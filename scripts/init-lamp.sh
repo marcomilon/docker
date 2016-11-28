@@ -2,7 +2,7 @@
 
 BASEDIR=$(dirname "$0")
 
-docker build -f $BASEDIR/LampDockerfile -t idt/web:5.6-mcrypt-gd-mysql .
+docker build -f $BASEDIR/DockerfilePhp -t idt/web:5.6-mcrypt-gd-mysql .
 
 echo
 docker pull mysql:5.7
