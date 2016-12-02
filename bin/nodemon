@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run --rm -v $(pwd):/data -p 3000:3000 -p 5858:5858 idt/node:grunt-cli nodemon $@
