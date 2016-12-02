@@ -5,7 +5,7 @@ services:
     container_name: idt-web
     restart: always
     volumes:
-      - /replace/with/your/document_root/:/var/www/html
+      - ${DOCKER_APACE_DOCUMENT_ROOT}:/var/www/html
     depends_on:
       - db
     links:
@@ -17,9 +17,9 @@ services:
     container_name: idt-mysql
     restart: always
     volumes:
-      - /replace/with/your/datadir:/var/lib/mysql
+      - ${DOCKER_MYSQL_DATA_DIR}:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: your-mysql-pwd
+      MYSQL_ROOT_PASSWORD: ${DOCKER_MYSQL_PWD}
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:4.6.4-1
     container_name: idt-phpmyadmin

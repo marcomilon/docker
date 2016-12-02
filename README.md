@@ -1,4 +1,4 @@
-# Simple out of the box Docker Lamp Stack
+# Simple out of the box Docker environment
 
 You need to download and install Docker  
 See [Docker](https://www.docker.com/)
@@ -20,7 +20,7 @@ I want to provide an easy to use Lamp Stack. Not meant to be use on production.
 
 ## What do i need to do first
 
-First you need to download the images. Launch the script *lamp-init.sh* in the libraries directory.
+First you need to download the images. Launch the script *init script* in the scripts directory.
 
 For example
 
