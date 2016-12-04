@@ -1,6 +1,6 @@
 FROM node:6.9.1-alpine
 
-RUN npm install -g grunt-cli nodemon node-inspector
+RUN npm install -g grunt-cli nodemon express-generator
 
 # Define working directory.
 WORKDIR /data
