@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: mongo
+    container_name: idt-mongo
+    restart: always
+    volumes:
+      - ${IDT_MONGO_DATA_DIR}:/data/db
+    ports:
+      - 27017:27017

@@ -1,0 +1,3 @@
+#!/bin/sh
+BASEDIR=$(dirname "$0")
+docker-compose -f $BASEDIR/../scripts/mongod-compose.yml stop
