@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y \
 # Install mysql
 RUN apt-get update && docker-php-ext-install mysqli pdo pdo_mysql
 
+COPY ./vhost.conf /etc/apache2/sites-available/vhost.conf
+RUN a2ensite vhost.conf
+
 # Active rewrite
 RUN a2enmod rewrite
 RUN echo 'date.timezone = "UTC"' > /usr/local/etc/php/conf.d/timezone.ini
