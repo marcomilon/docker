@@ -1,2 +1,4 @@
 datadir/
-scripts/vhost.conf
+scripts/lamp/vhost.conf
+scripts/lamp/composer-setup.php
+scripts/lamp/composer.phar
