@@ -32,7 +32,6 @@ echo
 echo "Everything looks good... Pullling images"
 echo
 sh $BASEDIR/pull-php.sh
-sh $BASEDIR/pull-php-apache.sh
 sh $BASEDIR/pull-mysql.sh
 
 read -p "Would you like to install composer? [Y/n] " composer

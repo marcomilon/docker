@@ -2,4 +2,4 @@
 
 BASEDIR=$(dirname "$0")
 
-docker pull mysql
+docker pull mysql:latest
