@@ -1,2 +1,0 @@
-#!/bin/sh
-docker run -it --rm --name idt-php-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp idt/apache:php-git-zip php $@

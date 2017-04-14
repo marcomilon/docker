@@ -1,3 +1,0 @@
-#!/bin/sh
-BASEDIR=$(dirname "$0")
-docker-compose -f $BASEDIR/../scripts/lamp/web-compose.yml up -d

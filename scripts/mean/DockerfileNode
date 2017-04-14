@@ -1,9 +1,0 @@
-FROM node:latest
-
-RUN npm install -g grunt-cli nodemon express-generator
-
-# Define working directory.
-WORKDIR /data
-
-# Define default command.
-CMD ["bash"]

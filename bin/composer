@@ -1,3 +1,0 @@
-#!/bin/sh
-BASEDIR=$(dirname "$0")
-docker run -it --rm --name idt-php-script -v $(BASEDIR):/usr/src/myapp -w /usr/src/myapp php:latest php composer.phar $@

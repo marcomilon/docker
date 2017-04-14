@@ -1,3 +1,0 @@
-#!/bin/sh
-echo "Running inside docker"
-docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll jekyll/jekyll jekyll $@
