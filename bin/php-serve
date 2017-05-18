@@ -1,0 +1,3 @@
+#!/bin/sh
+
+php -S localhost:8080 -t $IDT_PUBLIC_HTML &> /tmp/php-serve.log &2> /tmp/php-serve.log
