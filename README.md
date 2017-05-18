@@ -1,4 +1,4 @@
-# My Personal development enviroment
+# My Personal development environment
 
 You need to download and install Docker  
 See [Docker](https://www.docker.com/)
