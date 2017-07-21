@@ -1,2 +1,0 @@
-#!/bin/sh
-docker run -w /data --rm -v $(pwd):/data -w='/data' node:idt npm $@
