@@ -3,7 +3,6 @@ services:
   web:
     image: php:7.0-apache-jessie
     container_name: fs-apache
-    restart: always
     volumes:
      - ${DOCUMENT_ROOT}:/var/www/html/
     ports:
@@ -11,12 +10,10 @@ services:
   db:
     image: mysql
     container_name: fs-mysql
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: fullstack
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: fs-phpmyadmin
-    restart: always
     ports:
      - 8080:80
