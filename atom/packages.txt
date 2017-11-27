@@ -1,0 +1,17 @@
+auto-indent
+editorconfig
+git-blame
+highlight-selected
+markdown-preview-plus
+minimap
+minimap-bookmarks
+minimap-find-and-replace
+minimap-git-diff
+minimap-highlight-selected
+minimap-split-diff
+php-debug
+platformio-ide-terminal
+pretty-json
+split-diff
+symbols-tree-view
+
