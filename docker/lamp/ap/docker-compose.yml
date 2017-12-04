@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: fs/apache
+    image: fs/apache:node
     container_name: ap-apache
     volumes:
      - ${DOCUMENT_ROOT}:/var/www/html/
@@ -9,6 +9,7 @@ services:
      - 80:80
     links:
     - db
+    restart: "no"
   db:
     image: mysql
     container_name: ap-mysql
@@ -16,8 +17,10 @@ services:
      - ${MYSQL_DATADIR}:/var/lib/mysql/
     environment:
       MYSQL_ROOT_PASSWORD: fullstack
+    restart: "no"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: ap-phpmyadmin
     ports:
      - 8080:80
+    restart: "no"

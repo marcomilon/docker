@@ -7,16 +7,16 @@ services:
      - ${DOCUMENT_ROOT}:/var/www/html/
     ports:
      - 80:80
-    restart: no
+    restart: "no"
   db:
     image: mysql
     container_name: fs-mysql
     environment:
       MYSQL_ROOT_PASSWORD: fullstack
-    restart: no
+    restart: "no"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: fs-phpmyadmin
     ports:
      - 8080:80
-    restart: no
+    restart: "no"
