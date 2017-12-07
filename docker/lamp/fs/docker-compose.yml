@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: php:7.0-apache-jessie
+    image: fs/apache
     container_name: fs-apache
     volumes:
      - ${DOCUMENT_ROOT}:/var/www/html/
