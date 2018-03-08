@@ -14,7 +14,7 @@ services:
     image: mysql
     container_name: ap-mysql
     volumes:
-     - ${MYSQL_DATADIR}:/var/lib/mysql/
+     - dbdata:/var/lib/mysql/
     environment:
       MYSQL_ROOT_PASSWORD: fullstack
     restart: "no"
@@ -24,3 +24,5 @@ services:
     ports:
      - 8080:80
     restart: "no"
+  volumes:
+    dbdata:
