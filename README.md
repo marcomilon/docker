@@ -1,3 +1,3 @@
 # My Personal development environment
 
-Feel free to improve.
+This is my personal development environment. It may not be useful for you but feel free to improve.

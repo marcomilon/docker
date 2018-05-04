@@ -1,3 +1,2 @@
-datadir/
-scripts/lamp/composer-setup.php
-scripts/lamp/composer.phar
+docker/lamp/docker-compose.yml
+docker/lamp/serve.sh
