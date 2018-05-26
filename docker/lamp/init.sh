@@ -11,6 +11,7 @@ fi
 
 sed "s/{project}/${image}/g" docker-compose.tpl > docker-compose.yml
 sed "s/{project}/${image}/g" serve-php.tpl > serve.sh
+sed "s/{project}/${image}/g" mysql.tpl > mysql.sh
 
 echo "Add the folowing line to your host file: /etc/host"
 echo "127.0.0.1 www.${image}.com"
